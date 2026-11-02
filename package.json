@@ -1,0 +1,26 @@
+{
+  "name": "playwright-cucumber-js-framework",
+  "version": "1.0.0",
+  "description": "Learning-ready Playwright + JavaScript + Cucumber BDD + Page Object Model framework using SauceDemo",
+  "private": true,
+  "scripts": {
+    "test": "cucumber-js",
+    "test:headed": "cross-env HEADLESS=false cucumber-js",
+    "test:chrome": "cross-env BROWSER=chromium cucumber-js",
+    "test:firefox": "cross-env BROWSER=firefox cucumber-js",
+    "test:webkit": "cross-env BROWSER=webkit cucumber-js",
+    "test:smoke": "cucumber-js --tags @smoke",
+    "test:regression": "cucumber-js --tags @regression",
+    "test:login": "cucumber-js features/login.feature",
+    "test:cart": "cucumber-js features/cart.feature",
+    "test:checkout": "cucumber-js features/checkout.feature",
+    "report": "node utils/generate-report.js"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^12.2.0",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.4.7",
+    "playwright": "^1.56.1",
+    "@playwright/test": "^1.56.1"
+  }
+}
