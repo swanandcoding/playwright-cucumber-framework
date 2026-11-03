@@ -1,3 +1,5 @@
+
+//it launches the configured browser, creates a page, and initializes page objects.
 const { Before, After, setDefaultTimeout, Status } = require("@cucumber/cucumber");
 const { chromium, firefox, webkit } = require("playwright");
 const config = require("../utils/config");

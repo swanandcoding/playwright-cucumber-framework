@@ -1,3 +1,5 @@
+
+//common actions like opening a URL
 class BasePage {
   constructor(page) {
     this.page = page;
